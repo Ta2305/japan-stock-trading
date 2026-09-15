@@ -1,0 +1,14 @@
+{
+  "kabu_station": {
+    "port": 18081,
+    "is_demo_environment": true
+  },
+  "trading_params": {
+    "max_positions": 5,
+    "trade_size_shares": 100,
+    "use_ml_filter": true,
+    "ml_threshold": 0.55,
+    "sl_atr_multiplier": 1.5,
+    "tp_atr_multiplier": 2.5
+  }
+}

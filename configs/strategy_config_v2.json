@@ -1,0 +1,41 @@
+{
+  "default": {
+    "strategy_type": "mtf_regime",
+    "indicators": {
+      "ma_type": "kama",
+      "kama_er_period": 10,
+      "kama_fast": 2,
+      "kama_slow": 30,
+      "atr_period": 14,
+      "adx_period": 14,
+      "vwap_enabled": true
+    },
+    "entry_conditions": {
+      "trend_follow": {
+        "adx_min": 20.0,
+        "slope_atr_ratio_threshold": 0.4,
+        "min_rvol": 1.2,
+        "vwap_alignment": true,
+        "consecutive_ma_min": 2
+      }
+    },
+    "risk_management": {
+      "stop_loss_atr_multiplier": 2.0,
+      "take_profit_atr_multiplier": 3.5,
+      "trailing_stop_enabled": true,
+      "trailing_stop_atr_multiplier": 1.5,
+      "position_size_method": "fixed_fractional",
+      "risk_per_trade_pct": 1.0,
+      "initial_cash": 1000000.0
+    },
+    "time_filters": {
+      "no_trade_after_open_minutes": 5,
+      "force_close_before_session_end_minutes": 1
+    },
+    "execution": {
+      "use_slippage": true,
+      "slippage_mode": "tick_size",
+      "fee_per_trade_yen": 0.0
+    }
+  }
+}

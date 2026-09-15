@@ -1,0 +1,13 @@
+{
+  "id": "YOUR_KAGGLE_USERNAME/meta-model-gpu-trainer",
+  "title": "Meta Model GPU Trainer",
+  "code_file": "train_kernel.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "dataset_sources": [
+    "YOUR_KAGGLE_USERNAME/japan-stock-1m-ml-dataset"
+  ]
+}

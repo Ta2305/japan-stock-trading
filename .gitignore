@@ -1,0 +1,61 @@
+# ------------------------------------------------------------------
+# Secrets / credentials
+# ------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# ------------------------------------------------------------------
+# Market data & datasets (not distributed; fetch with scripts/)
+# ------------------------------------------------------------------
+market_data/
+kaggle_dataset/
+ml_dataset.parquet
+*.parquet
+
+# ------------------------------------------------------------------
+# Trained models & runtime logs
+# ------------------------------------------------------------------
+saved_models/
+logs/
+*.log
+
+# ------------------------------------------------------------------
+# Research documents & AI-agent artifacts (kept local only)
+# ------------------------------------------------------------------
+docs/
+antigravity_history/
+.agents/
+.commandcode/
+GEMINI.md
+
+# ------------------------------------------------------------------
+# Windows deployment bundle: ship code only
+# (no duplicated src_v2 / model / market data copies)
+# ------------------------------------------------------------------
+deploy_windows_kabucom/src_v2/
+deploy_windows_kabucom/saved_models/
+deploy_windows_kabucom/market_data/
+
+# ------------------------------------------------------------------
+# Local-only scratch / obsolete duplicates
+# ------------------------------------------------------------------
+demo_kabu_kioxia.py
+pyproject2.toml
+
+# ------------------------------------------------------------------
+# Python environment & caches
+# ------------------------------------------------------------------
+.venv/
+.venv_linux/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ------------------------------------------------------------------
+# OS files
+# ------------------------------------------------------------------
+.DS_Store
+Thumbs.db
